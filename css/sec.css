@@ -1,0 +1,569 @@
+.first-display-box{
+	background-color: black;
+/*	display: flex;*/
+/*	justify-content: flex-start;*/
+/*	align-items: flex-end;*/
+/*	align-content:flex-start;*/
+	padding: 20px;
+	text-align: left;
+	
+}
+
+
+.activate{
+	color: #40a9f3;
+}
+
+
+.blog-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    
+	
+}
+
+.user-box{
+    text-align: center;
+    padding: 40px 20px;
+    width: 70%;
+    font-weight: 300;
+}
+
+.user-box h1{
+    font-size: 300%;
+    padding: 18px 10px 10px 10px;
+    font-weight: 600;
+}
+
+.user-box li{
+    list-style: none;
+    text-align: left;
+    padding-left: 10px;
+    display: inline;
+    font-size: 13px;
+}
+
+.user-box li sup{
+    font-size: 15px;
+    color:#47cf73;
+}
+
+.user-box li a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-box ul li a:active,.user-box ul li a:hover{
+    color:#999aea;
+}
+
+.tag-box{
+    padding-top: 10px;
+}
+
+.author:any-link{
+    color:white;
+    text-decoration: none;
+}
+.more-post,.tag-value a{
+    text-decoration: none;
+	color: #9b7d7d ;
+    padding: 4px 6px;
+    border: 1px solid #5b4747;
+    border-radius: 70px;
+    font-size: 14px;
+    margin:0 6px 20px 0;
+}
+
+.more-post:hover ,.tag-value a:hover{
+	text-decoration: none;
+	color:black;
+    border: 1px solid black;
+}
+
+
+.git-btn:hover,.visit-btn:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.git-btn,.visit-btn{
+    color:white;
+    
+}
+
+div.ground-hello{
+	display: block;
+	letter-spacing: 10px;
+	font-size: 500%;
+	font-weight:700;
+	color: #47cf73;
+	
+}
+
+
+/******************************** BLOG POST GALLERY START *************************/
+
+.post-gallery-box{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+
+
+.post-gal-container{
+	display: flex;
+	flex-direction: column;
+	font-weight: 400;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+	border-bottom: 1px solid #e9e6e6;
+
+}
+
+
+
+.post-gal-container a{
+	color: black;
+	text-decoration: none;
+}
+
+.post-gal-container a:hover{
+	text-decoration: underline;
+}
+
+
+.post-gal-container .post-gal-image-box{
+	position: relative;
+    width:100%;
+    height: 240px;
+	
+}
+
+.post-gal-container .post-gal-image-box img{
+    height: 100%;
+}
+
+
+.post-gal-container .post-page-gal-image-box{
+	position: relative;
+     width:100%;
+        height: 160px;
+	
+}
+
+.post-gal-container .post-page-gal-image-box img{
+    height: 100%;
+}
+
+.post-gal-container .post-gal-desc-box{
+	padding: 10px 0px;
+	
+}
+
+.post-gal-container .post-gal-desc-box .post-desc-detail{
+
+	
+}
+
+.post-time-lang{
+	display: flex;
+	flex-direction: row;
+	font-size: 11px;
+	padding: 0 0 6px 0px;
+}
+
+
+.post-time-lang div{
+	flex: 1;
+}
+
+.post-time-lang .time{
+	flex: 30%;
+	color: #aaaebc;
+}
+
+
+.lang a:hover{
+	text-decoration: none;
+}
+
+.lang a:hover .fa{
+	color:#40a9f3;
+	
+}
+
+.lang .fa{
+	color: #aaaebc;
+}
+
+.post-time-lang .lang{
+	flex: 70%;
+	text-align: right;
+	padding-right: 3px;
+	font-size: 12px;
+}
+
+.post-time-lang .lang .lang-tag{ 
+	padding: 2px 4px;
+	border-radius: 21px;
+	color:#aaaebc;
+	
+}
+
+.post-gal-container .post-gal-desc-box .post-desc-btn{
+	padding:  13px 0 0 0;
+	flex-direction: row;
+}
+
+.post-overlay-desc{
+
+	display: block;
+	width: 100%;
+	position:absolute;
+	top: 8px;
+	right: -8px;
+	border-radius: 4px 4px 0px 0px;
+	
+}
+
+
+.post-desc a{
+	padding: 5px 10px;
+	font-size: 11px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: black;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1px
+}
+
+.post-desc a:hover{
+	background-color: #40a9f3;
+	color: white;
+	text-decoration: none;
+}
+
+
+.post-gal-container:hover .post-gal-image-box {
+	opacity: 0.97;
+}
+
+
+
+/******************************** BLOG POST GALLERY END *************************/
+
+.result{
+    background-color:#444857;
+    border-radius: 6px;
+    color: white;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+
+/*BLOG TITLE CSS*/
+
+.blog-title{
+	padding: 30px;
+}
+
+.blog-page-head{
+    padding:20px 0 0 25px;
+}
+
+/*BLOG CATEGORY CSS*/
+.blog-page-h2{
+    text-transform: uppercase;
+    
+}
+
+.author{
+    font-size: 16px;
+}
+
+.blog-page-box{
+	background-color: #f1f1f1;
+	color:black;
+	padding-top:0px;
+}
+
+.type-container{
+	padding: 25px 0;
+}
+
+.story-content{
+    padding: 10px 0 10px 0;
+}
+
+.blog-page-img{
+	padding-top: 5px;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+
+.blog-page-img img{
+    max-height: 550px;
+    width: 100%;
+}
+
+.blog-page-type{
+	
+	padding: 20px;
+	box-shadow: 1px 1px 4px #d7cfcf,1px 1px 4px #dbd0d0; 
+	list-style:none;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+
+.type-head{
+	padding:5px 0;
+	color:rgba( 67, 74, 74, 0.83 );
+	border-top:1px solid rgba( 181, 185, 184, 0.83 );
+	border-bottom:1px solid rgba( 181, 185, 184, 0.83 );
+}
+
+
+
+/****************************PAGINATION CSS***********************/
+
+.pagination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination li{
+	list-style: none;
+	display:inline-block;
+}
+
+.page{
+	font-size: 16px;
+	font-weight: 400;
+	background-color: black;
+	padding: 3px 13px;
+    margin: 0 5px;
+}
+
+.page{
+	color: white;
+}
+
+.active {
+	background-color: #40a9f3 ;
+}
+
+
+/***********************CATEGORY BOX************************/
+
+
+.category-box {
+	background-color: #f1f1f1;
+	color:black;
+}
+
+.cat-element{
+	display: inline-block;
+	font-size: 14px;
+    color:rgba( 80, 78, 95, 0.861 );
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 8px 14px;
+	margin:0 6px 6px 0;
+	background-color:  #40a9f3 ;
+	border-radius: 4px;
+}
+
+.cat-element:hover{
+	background-color: #47cf73;
+    color: white;
+}
+
+
+/*************************BLOG CONTENT CSSS*****************/
+
+.blog-page-content{
+	padding: 0 15px 10px 10px;
+	width: 100%;
+	
+}
+
+.page-container{
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px 10px 10px 10px;
+}
+
+.story{
+	width: 94%;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 106%;
+	line-height: 25px;
+}
+
+
+
+figcaption{
+	color:#d2b1b1;
+	font-weight: lighter;
+	font-size: 13px;
+	padding-top: 10px;
+}
+
+/*************BOTTOM BLOG COLLECTION CSS*************/
+
+
+
+/********************************MEDIA TAGS FOR PAGES LIKE BLOG AND ABOUT^********************/
+
+
+@media only screen and (max-width:1000px){
+	.blog-page-content{
+	padding: 0 0px 0px 0px;
+}
+	
+   .blog-page-img{
+	padding-top: 5px;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.blog-page-img img{
+    max-height: 450px;
+    width: 100%;
+}
+
+    
+    
+    
+.blog-page-type{
+		display: none;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width:770px){
+	
+	
+	.blog-page-content{
+	padding: 0 0px 7px 0px;
+}
+
+    
+    .blog-page-head{
+    padding:20px 0px 0px 0px;
+}
+    
+	.page-container{
+	max-width: 100%;
+	margin: 0px 0px;
+	
+}
+	
+	
+	.first-display-box{
+		padding: 0px;
+		font-size: 96%;
+        
+	
+	}
+	
+    .user-box{
+        padding: 30px 20px;
+        width: 80%;
+    }
+    
+    .user-box h1{
+    font-size: 200%;
+    padding: 16px 0px 6px 0px;
+    font-weight: 600;
+}
+    
+    
+	
+div.ground-hello{
+	display: block;
+	letter-spacing: 10px;
+	font-size: 300%;
+	font-weight:700;
+	color: #47cf73;
+	
+}
+
+	.row{
+		padding: 0px;
+	}
+	
+	
+	.blog-page-box{
+	background-color: #f1f1f1;
+	color:black;
+	padding:0px;
+}
+    
+    .blog-page-img{
+	padding-top: 5px;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.blog-page-img img{
+    max-height: 230px;
+    width: 100%;
+}
+    
+    
+
+	
+	.blog-page-type{
+		display: none;
+	}
+	
+
+	
+	.post-image-box{
+		padding: 5px;
+       
+	}
+
+	
+	.story{
+	width: 100%;
+	margin-left: 0px;
+	padding: 0px;
+	font-size: 96%;
+	font-weight:300;
+	line-height: 20px;
+		
+
+}
+    
+    /*BLOG CATEGORY CSS*/
+.blog-page-h2{
+    font-size: 24px;
+    
+}
+	
+	.col-xs-12,.row{
+		padding: 5px;
+	}
+	
+	
+}

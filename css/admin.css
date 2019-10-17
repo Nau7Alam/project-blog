@@ -1,0 +1,675 @@
+/*^^^^^^^^^^^^^^^^^^^^^^Scroll Bar Design css^^^^^^^^^^^^^*/
+/*Width*/
+/*
+::-webkit-scrollbar{
+    width:10px;
+}
+*/
+
+/*Track*/
+/*
+::-webkit-scrollbar-track{
+    box-shadow:inset 0 0 1px #4a4e4a;
+    border-radius: 0px;
+    background-color: white;
+}
+*/
+
+/*Handle*/
+
+/*
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius:10px;
+ 
+}
+*/
+
+/*Handle on hover*/
+
+/*
+::-webkit-scrollbar-thumb:hover{
+    background:black;
+}
+
+*/
+
+
+
+
+
+body,html{
+	background-color: white;
+   
+}
+
+main{
+     font-size: 90%;
+}
+
+.row{
+	padding: 0;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#47cf73;
+}
+
+
+
+small{
+    font-size: 13px;
+}
+
+ .admin-menu{
+     display: none;
+     text-align: center;
+     background-color: #47cf73;
+     color: white;
+     padding: 6px;
+     font-weight: bolder;
+     position: fixed;
+     bottom: 20px;
+     right: 16px;
+/*
+     height: 60px;
+     width: 60px;
+*/
+     border-radius: 50%;
+     box-shadow: 0px 0px 3px rgba( 166, 144, 144, 0.916 );
+     z-index: 2;
+    }
+.admin-menu-item{
+/*    transform: translateY(50%);*/
+}
+
+/******************** ITEM HIDDEN AMD SHOW CLASS START **********************/
+
+.item-content-hidden{
+	display: none;
+}
+
+
+.item-content-visible{
+	display: block;
+}
+
+/******************** ITEM HIDDEN AMD SHOW CLASS END ***********************/
+
+
+/*********************    VIEW BUTTON CSS    ****************************/
+
+main{
+    position: relative;
+}
+
+
+.view-button-box{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.view-button-box div{
+    flex: 1;
+}
+
+.view-button,.show-button{
+
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+/*    margin-right: 10px;*/
+    cursor: pointer;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-button:hover,.view-button:hover{
+    color: #40a9f3;
+    background-color: rgba( 229, 240, 229, 0.791 );
+}
+
+
+
+
+
+/*****************************ADMIN-SIDEBAR CSS***************/
+
+
+.admin-side-bar-container{
+    position: fixed;
+	top: 45px;
+	height: 100%;
+	background-color:white;
+	color: black;
+	padding: 20px 0px 20px 0px;
+    overflow:hidden;
+    z-index: 1;	
+	
+}
+
+@keyframes showAdminOpts{
+    0%{
+        transform: translate(100%, 0%);
+    }
+    
+    100%{
+          transform: translate(0%, 0%);
+    }
+}
+
+@keyframes hideAdminOpts{
+    
+    0%{
+          transform: translate(0%, 0%);
+    }
+    
+    100%{
+        transform: translate(100%, 0%);
+    }
+    
+    
+}
+
+
+
+.admin-main-bar-container > .col-lg-6,.col-md-6{
+    padding-left:  0px;
+    padding-bottom:  0px;
+}
+
+
+
+.admin-side-bar-box{
+
+	
+}
+
+/************************ ADMINS MENU ITEM CSS   *******************/
+
+.menu-item-link{
+    cursor: pointer;
+    user-select: none;
+    padding:  10px 30px;
+    border-bottom: 1px solid  rgba( 229, 240, 229, 0.791 );
+}
+.menu-item-link:hover{
+     background-color: rgba( 229, 240, 229, 0.791 );
+}
+
+.menu-dropdown{
+    padding: 3px 40px;
+}
+
+
+.menu-item{
+    padding: 0px;
+    color: black;
+}
+
+.menu-item-link:hover{
+    
+    color:#47cf73;
+}
+
+.menu-item i{
+    padding-right: 10px;
+     color: #47cf73;
+;
+}
+
+.admin-img-container{
+    text-align: center;
+  
+}
+
+.admin-img-box{
+ text-align: center;
+padding-bottom: 10px;
+    
+}
+
+.admin-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px #c1c1c1,1px 1px 4px #dce6a7;
+   
+}
+
+.post-opts,.user-opts,.project-opts{
+    padding: 4px 0px; 
+}
+
+#user{
+    color: black;
+    font-size: 22px;
+    padding: 10px 15px;
+
+}
+
+/*****************************ADMIN-MAINBAR CSS***************/
+
+
+
+.admin-main-bar-container{
+	color: black;
+	padding: 5px 0px 0px 5px;
+	height: 100%;
+	
+}
+
+.post-container,.project-container{
+    padding: 15px 10px;
+    border-top: 2px solid #47cf73;
+    margin-bottom: 30px;
+}
+
+
+
+
+/************************************  POST ELEMENT POST CSS  **********************************/
+
+.post-box{
+    padding: 8px 8px 8px 4px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 3px #d6dbd7,0px 0px 3px #d6dbd7;
+    border-radius: 4px;
+  
+}
+
+.element-txt{
+    font-weight: bold;
+    color: #f2bfb9;
+    font-style: oblique;
+}
+
+.post-box:hover{
+      background-color:  #f1f1f1;
+}
+
+
+.post-box-content{
+    display: flex;
+    padding: 4px;
+    flex-direction: row;
+    min-height: 85px;
+    
+}
+
+.post-count{
+    display: flex;
+    padding-top: 4px;
+}
+
+.post-count small{
+    flex: 1;
+    text-align: center;
+}
+
+.post-img{
+   flex: 30%;
+   max-height: 100px;
+   max-width: 100px;
+  
+}
+
+.post-img img{
+    max-height: 80px;
+   max-width: 80px;
+}
+
+
+.post-title{
+    flex: 60%;
+    padding-left: 4px;
+    font-size: 90%;
+    
+}
+.post-date{
+    color:rgba( 80, 78, 84, 0.791 );
+}
+
+.post-icon,.project-icon{
+   flex: 10%;
+   text-align: center;
+   padding:10px;
+   cursor: pointer;
+   color: #9e8e8e;
+
+}
+
+
+.post-detail-content{
+
+    position: absolute;
+    top:43%;
+    right: 4%;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    z-index: 100;
+    width: 45%;
+    box-shadow: 0px 0px 3px #d6dbd7,0px 0px 3px #d6dbd7;
+    
+}
+
+
+.post-box i{
+    color: #9e8e8e;
+}
+
+.post-operations {
+    display: flex;
+    flex-direction:column;
+    height: 100;
+}
+
+
+/******************************POST BUTTONS*************************/
+
+.post-btn{
+    padding: 5px 8px;
+    font-size: 12px;
+    border: 1px solid #47cf73;
+    text-decoration: none;
+    color: #47cf73;
+    margin-top: 2px;
+   
+}
+
+.post-btn:hover{
+    background-color: #47cf73;
+    text-decoration: none;
+    color: white;
+ 
+}
+
+.post-btn-update{
+     margin-bottom: 3px;
+}
+
+/********************************** LOGIN FORM CSS ************************************/
+
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+/*    min-height: 550px;*/
+}
+
+.signin-txt{
+    margin: 5px 0 10px 0;
+    text-shadow: 2px 3px 4px #bebec5;
+}
+
+.login-form-container small,.post-create-container small{
+    font-size: 11px;
+}
+
+.login-form{
+    
+    padding: 50px 30px;
+    background-color: white;
+    box-shadow: 0 0 5px  #ceced3,0 0 5px #ceced3;
+    border-radius: 3px;
+    margin-top: 30px;  
+
+}
+
+.signup-form{
+    padding: 25px 45px;
+    background-color: white;
+    box-shadow: 0 0 4px  #ceced3,0 0 3px #ceced3;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+
+.login-input{
+    display: block;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin: 13px 0px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px #95939e;
+
+}
+
+.login-input::placeholder{
+    color:#615f6c;
+}
+
+
+.login-input:focus{
+    box-shadow: inset 0px 0px 4px #95939e;
+}
+
+.signup-form-box{
+    padding: 5px 0 50px 0;
+    margin: 0 12px;
+}
+
+
+.signup-form label{
+    margin-bottom: 4px;
+}
+
+.signup-input{
+    display: block;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px #95939e;
+
+}
+
+.signup-input::placeholder{
+    color:#e4d6d6;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+.signup-input:focus{
+    box-shadow: inset 0px 0px 4px #95939e;
+}
+
+
+.submit-btn{
+    background-color: #47cf73;
+    color: white;
+    margin-top: 16px;
+    font-size: 18px;
+    
+}
+
+.submit-btn:hover{
+    background-color: #50c76c;
+}
+
+
+.frogot-link{
+    padding: 10px 0;
+}
+
+.frogot-link a{
+    text-decoration: underline;
+}
+
+.instruction{
+    padding: 0px;
+    color: #0f0e1a;
+    font-weight: 100;
+    font-size: 10px;
+    font-family:arial;
+}
+
+.create-post-continer{
+    margin: 0 auto;
+}
+
+
+.myText{
+    width: 100%;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px solid #cbd8db;
+    padding: 10px 15px;
+}
+
+.myProject{
+    width: 100%;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px solid #cbd8db;
+    padding: 10px 15px;
+}
+
+.create_post_btn{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.create_post_btn div{
+    flex: 1;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+    
+}
+
+.update-img{
+    padding: 0 0 20px 0;
+}
+
+
+/*****************@keyframes for device less the 1300px width;************************************/
+@media screen and (min-width:1500px){
+
+    .admin-side-bar-container{
+        position: fixed;
+        left:5%;
+        top: 45px;
+        height: 100%;
+        background-color:white;
+        color: black;
+        padding: 20px 0px 20px 0px;
+        overflow:hidden;
+        z-index: 1;
+
+    }
+    
+}
+
+
+
+
+
+/*****************@keyframes for device less the 1000px width;************************************/
+@media screen and (max-width:1030px){
+    
+   
+
+.login-form-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+/*    min-height: auto;*/
+    padding-bottom: 30px;
+}
+   
+
+    
+}
+@media screen and (max-width:1050px) and (min-width:990px){
+    .post-title h6{
+       font-size: 14px;
+
+    }
+    .post-box{
+        padding: 2px;
+    }
+    
+}
+
+@media screen and (max-width:770px){
+    
+    
+    .post-img{
+       flex: 30%;
+
+    }
+
+
+    .post-title{
+       flex: 55%;
+
+    }
+
+    .post-icon,.project-icon{
+       flex: 15%;
+       padding:23px 5px;
+    }
+
+    
+}
+
+@media screen and (max-width:575px){
+    
+    .admin-menu{
+      display: block;
+    }
+    
+    .dashboard{
+        display: none;
+    }
+    .project-container,.post-container{
+        border: none;
+    }
+    
+  
+     .admin-side-bar-container{
+     display: none;
+    }
+    
+    .admin-menu-show{
+        display: block;
+        animation-name: showAdminOpts;
+        animation-duration: .4s; 
+        animation-fill-mode: forwards;
+/*        animation-timing-function: ease-in;*/
+        
+    }
+    
+     .admin-menu-hide{
+        display: block;
+        animation-name: hideAdminOpts;
+        animation-duration: .4s; 
+        animation-fill-mode: forwards;
+/*        animation-timing-function: ease-in;*/
+        
+    }
+    
+    
+   
+    
+}
